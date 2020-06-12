@@ -17,13 +17,11 @@ def build_jinja2_environment(**options) -> Environment:
 
     global_names = {
         "debug": settings.DEBUG,
-        "project_name": consts.PROJECT_NAME.lower(),
+        "project_name": "weatherexam.herokuapp.com",
         "repr": repr,
         "static": static,
         "url": reverse,
     }
-
-    global_names.update(big_brother())
 
     env.globals.update(**global_names)
 
