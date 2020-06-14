@@ -54,7 +54,6 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
-                'django.core.context_processors.csrf',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -127,3 +126,5 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = REPO_DIR / ".static"
+
+# csrftoken = 'Zdxf6QLVBe8ch8QP6uFO5yBOkvYfSj5FtbLYLCV6gwwVmMophTUxH4LhudJunqoy'
