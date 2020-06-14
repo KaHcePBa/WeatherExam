@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 jinja2 = "*"
 pyowm = "*"
+djangorestframework = "*"
 
 [requires]
 python_version = "3.8"
