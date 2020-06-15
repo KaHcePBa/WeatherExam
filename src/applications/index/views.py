@@ -1,5 +1,8 @@
+# from django.template import context
+# from django.template.context_processors import csrf
 from django.views.generic import TemplateView
 from django.shortcuts import render
+
 import json
 import urllib.request
 
@@ -8,6 +11,7 @@ class IndexView(TemplateView):
     template_name = "index/index.html"
 
 def index(request):
+    # context.update(csrf(request))
     if request.method == 'POST':
         city = request.POST['city']
 
