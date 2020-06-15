@@ -25,9 +25,9 @@ def index(request):
             "country_code": str(list_of_data['sys']['country']),
             "coordinate": str(list_of_data['coord']['lon']) + ' '
                           + str(list_of_data['coord']['lat']),
-            "temp": str(list_of_data['index']['temp']) + 'k',
-            "pressure": str(list_of_data['index']['pressure']),
-            "humidity": str(list_of_data['index']['humidity']),
+            "temp": str(list_of_data['main']['temp']) + 'k',
+            "pressure": str(list_of_data['main']['pressure']),
+            "humidity": str(list_of_data['main']['humidity']),
         }
         print(data)
     else:
